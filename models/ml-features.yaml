@@ -15,7 +15,6 @@ models:
         - shipping_address_state
         - customer_currency
         - payment_method_details_card_network
-        - is_delinquent
         - has_credit_card
         - days_since_first_sale
         - days_since_last_purchase
