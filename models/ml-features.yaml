@@ -87,10 +87,6 @@ models:
             select: max(payment_method_details_card_network)
             where: created = payment_method_details_card_network_ts
         - entity_var:
-            from: inputs/stripeCustomers
-            name: is_delinquent
-            select: max(delinquent)
-        - entity_var:
             from: inputs/stripeCharges
             name: has_credit_card
             select: max(case when (payment_method_details_card_funding = 'credit' and status = 'succeeded') then 1 else 0 end)
