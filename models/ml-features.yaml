@@ -7,7 +7,6 @@ models:
         - from: inputs/stripeBalanceHistory
         - from: inputs/stripeSubscriptions
         - from: inputs/stripeRefunds
-        - from: inputs/stripeInvoicesView
       entity_key: user
       validity_time: 24h
     model_type: id_stitcher
