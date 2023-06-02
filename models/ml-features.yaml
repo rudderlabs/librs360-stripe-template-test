@@ -42,18 +42,6 @@ models:
         - net_transaction_amount_in_past_365_days
         - transactions_in_past_365_days
         - refund_count_in_past_365_days
-        - n_subscriptions_total
-        - n_plans_total
-        - n_paid_intervals
-        - n_max_renewals
-        - distinct_plans_subscribed
-        - current_amount_due_subscriptions
-        - amt_spent_subscriptions
-        - days_since_first_subscription
-        - total_active_subscriptions
-        - total_active_plans
-        - active_plan_intervals
-        - total_active_plan_amount
       macros:
         - inputs:
             - timestamp_col
