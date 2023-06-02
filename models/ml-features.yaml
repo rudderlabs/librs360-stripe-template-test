@@ -1,12 +1,9 @@
 models:
   - model_spec:
       edge_sources:
-        - from: inputs/stripeCustomers
         - from: inputs/stripeCharges
         - from: inputs/stripeInvoices
         - from: inputs/stripeBalanceHistory
-        - from: inputs/stripeSubscriptions
-        - from: inputs/stripeRefunds
       entity_key: user
       validity_time: 24h
     model_type: id_stitcher

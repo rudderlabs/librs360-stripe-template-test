@@ -1,16 +1,6 @@
 inputs:
   - ids:
       - entity: user
-        select: customers_id
-        type: customer_id
-    name: stripeCustomers
-    occurred_at_col: timestamp
-    table: analytics_db.data_apps_simulated_stripe.customers
-    source_metadata:
-      role: singer-stripe
-      category: singer-protocol
-  - ids:
-      - entity: user
         select: customer
         type: customer_id
       - entity: user
@@ -48,32 +38,6 @@ inputs:
     name: stripeBalanceHistory
     occurred_at_col: created
     table: analytics_db.data_apps_simulated_stripe.balance_transactions
-    source_metadata:
-      role: singer-stripe
-      category: singer-protocol
-  - ids:
-      - entity: user
-        select: subscriptions_id
-        type: subscription_id
-      - entity: user
-        select: customer
-        type: customer_id
-    name: stripeSubscriptions
-    occurred_at_col: created
-    table: analytics_db.data_apps_simulated_stripe.subscriptions
-    source_metadata:
-      role: singer-stripe
-      category: singer-protocol
-  - ids:
-      - entity: user
-        select: charge
-        type: charge_id
-      - entity: user
-        select: balance_transaction
-        type: balance_transaction_id
-    name: stripeRefunds
-    occurred_at_col: created
-    table: analytics_db.data_apps_simulated_stripe.refunds
     source_metadata:
       role: singer-stripe
       category: singer-protocol
