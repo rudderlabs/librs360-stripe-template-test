@@ -77,13 +77,3 @@ inputs:
     source_metadata:
       role: singer-stripe
       category: singer-protocol
-  - ids:
-      - entity: user
-        select: customer
-        type: customer_id
-    name: stripeInvoicesView
-    occurred_at_col: invoice_created_timestamp
-    view: ANALYTICS_DB.DATA_APPS_SIMULATED_STRIPE.STG_INVOICES_DATA
-    source_metadata:
-      role: singer-stripe
-      category: singer-protocol
